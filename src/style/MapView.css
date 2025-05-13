@@ -1,0 +1,32 @@
+.map-wrapper {
+  position: relative;
+}
+
+.legend {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.legend h4 {
+  margin: 0 0 8px 0;
+}
+
+.legend-box {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.legend-box.green { background: green; }
+.legend-box.orange { background: orange; }
+.legend-box.red { background: red; }
+.legend-box.gray { background: gray; }

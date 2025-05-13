@@ -1,0 +1,87 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.map-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.leaflet-container {
+  width: 100% !important;
+  height: 600px !important;
+}
+
+@media (max-width: 1200px) {
+  .leaflet-container {
+    height: 500px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .leaflet-container {
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .leaflet-container {
+    height: 300px !important;
+  }
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 30px 0 10px 0;
+}
+
+.train-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  max-width: 1200px;
+}
+
+.train-list li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.train-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.train-list .railway {
+  font-weight: bold;
+  color: #213547;
+}
+
+.train-list .train-number {
+  color: #646cff;
+}
+
+.train-list .from-station {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
