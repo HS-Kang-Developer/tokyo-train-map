@@ -21,7 +21,7 @@ export async function fetchCrowdedTrains() {
     if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
     const data = await res.json();
 
-    console.log('🚦 혼잡도 열차 데이터:', data);
+    // console.log('🚦 혼잡도 열차 데이터:', data);
 
     const filtered = data.filter(info =>
       info['odpt:trainInformationText']?.ja

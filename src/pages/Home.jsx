@@ -8,7 +8,7 @@ function Home() {
 
   useEffect(() => {
     fetchTrainLocations().then((data) => {
-      console.log('🚈 リアルタイム列車位置データ:', data);
+      // console.log('🚈 リアルタイム列車位置データ:', data);
       setTrains(data);
     });
   }, []);

@@ -72,7 +72,7 @@ function MapView() {
   useEffect(() => {
     const update = () => {
       fetchTrainLocations().then((data) => {
-        console.log('🚈 열차 위치 업데이트:', data);
+        // console.log('🚈 열차 위치 업데이트:', data);
         setTrains(data);
       });
     };
